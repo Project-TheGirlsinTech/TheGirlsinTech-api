@@ -27,5 +27,11 @@ namespace TheGirlsinTech.Api.Controllers
             
             return Ok(item);
         }
+
+        [HttpPost]
+        publicIActionResult Post(Item item)
+        {
+            return Created("/catalog/42", item);
+        }
     }
 }
