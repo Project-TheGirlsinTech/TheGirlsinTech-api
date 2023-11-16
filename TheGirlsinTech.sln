@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGirlsinTech.Domain", "Th
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGirlsinTech.Api", "TheGirlsinTech.Api\TheGirlsinTech.Api.csproj", "{6CCFE9CB-4D09-4E46-9392-34686D6A67F7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "The.Girls.in.Tech.Domain", "The.Girls.in.Tech.Domain\The.Girls.in.Tech.Domain.csproj", "{F2A6BB4A-9068-43A6-824E-51F67AFA7A8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheGirlsinTech.Data", "TheGirlsinTech.Data\TheGirlsinTech.Data.csproj", "{49F34FD4-5359-490D-AC3B-4AF5592FCF37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{6CCFE9CB-4D09-4E46-9392-34686D6A67F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CCFE9CB-4D09-4E46-9392-34686D6A67F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CCFE9CB-4D09-4E46-9392-34686D6A67F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2A6BB4A-9068-43A6-824E-51F67AFA7A8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2A6BB4A-9068-43A6-824E-51F67AFA7A8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2A6BB4A-9068-43A6-824E-51F67AFA7A8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2A6BB4A-9068-43A6-824E-51F67AFA7A8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49F34FD4-5359-490D-AC3B-4AF5592FCF37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49F34FD4-5359-490D-AC3B-4AF5592FCF37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49F34FD4-5359-490D-AC3B-4AF5592FCF37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49F34FD4-5359-490D-AC3B-4AF5592FCF37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
