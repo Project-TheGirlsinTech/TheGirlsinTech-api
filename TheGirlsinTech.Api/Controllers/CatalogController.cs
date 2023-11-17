@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using TheGirlsinTech.Domain.Catalog;
 using TheGirlsinTech.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace TheGirlsinTech.Api.Controllers
 {
@@ -62,8 +63,21 @@ namespace TheGirlsinTech.Api.Controllers
         }
 
         [HttpPut("{id:int}")]
-        public IActionResult Put(int id, Item item)
+        public IActionResult PutItem(int id, [FromBody] Item item)
         {
+            if (id != item.Id)
+            {
+                return BadRequest();
+            }
+
+            if (_db.Items.Find(id) == null)
+            {
+                return NotFound();
+            }
+
+            _db.Entry(item).State = EntityState.Modified;
+            _db.SaveChanges();
+
             return NoContent();
         }
 
