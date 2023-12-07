@@ -1,4 +1,5 @@
 ﻿using TheGirlsinTech.Domain.Catalog;
+using TheGirlsinTech.Domain.Orders;
 using Microsoft.EntityFrameworkCore;
 using TheGirlsinTech.Domain.Orders;
 
@@ -6,8 +7,7 @@ namespace TheGirlsinTech.Data
 {
     public class StoreContext : DbContext
     {
-        public StoreContext(DbContextOptions<StoreContext> options)
-        : base(options)
+        public StoreContext(DbContextOptions<StoreContext> options) : base(options)
         { }
         public DbSet<Item> Items { get; set; }
 
