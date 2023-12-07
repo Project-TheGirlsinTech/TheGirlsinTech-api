@@ -1,6 +1,7 @@
 ﻿using TheGirlsinTech.Domain.Catalog;
 using TheGirlsinTech.Domain.Orders;
 using Microsoft.EntityFrameworkCore;
+using TheGirlsinTech.Domain.Orders;
 
 namespace TheGirlsinTech.Data
 {
