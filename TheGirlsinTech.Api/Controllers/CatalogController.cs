@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using TheGirlsinTech.Domain.Catalog;
 using TheGirlsinTech.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace TheGirlsinTech.Api.Controllers
 {
@@ -19,12 +20,6 @@ namespace TheGirlsinTech.Api.Controllers
         [HttpGet]
         public IActionResult GetItems()
         {
-            var items = new List<Item>()
-            {
-                new Item("Shirt", "Ohio State shirt.", "Nike", 29.99m),
-                new Item("Shorts", "Ohio State shorts.", "Nike", 44.99m)
-            };
-
             return Ok(_db.Items);
         }
         
@@ -82,6 +77,7 @@ namespace TheGirlsinTech.Api.Controllers
         }
 
         [HttpDelete("{id:int}")]
+        [Authorize("delete:catalog")]
         public IActionResult DeleteItem(int id)
         {
             var item = _db.Items.Find(id);
